@@ -1,0 +1,21 @@
+"Phrases"
+{
+    "Menu_Back"
+    {
+        "en"    "{BLUE}7. Back"
+        "ru"    "{BLUE}7. Назад"
+        "ua"    "{BLUE}7. Назад"
+    }
+    "Menu_Next"
+    {
+        "en"    "{BLUE}8. Next"
+        "ru"    "{BLUE}8. Далее"
+        "ua"    "{BLUE}8. Далі"
+    }
+    "Menu_Exit"
+    {
+        "en"    "{BLUE}9. Exit"
+        "ru"    "{BLUE}9. Выход"
+        "ua"    "{BLUE}9. Вихід"
+    }
+}
