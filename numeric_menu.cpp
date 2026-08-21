@@ -343,7 +343,7 @@ void GenerateMenuHtml(int iSlot) {
     
 
     
-    std::string nav = "<br>"; 
+    std::string nav = ""; 
     
     if (mp.iList > 0 || m.bBack) {
         std::string backTxt = ColorizeMenuText(std::string(GetTranslation("Menu_Back")));
