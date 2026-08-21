@@ -646,7 +646,7 @@ bool NumericMenuMain::Unload(char* error, size_t maxlen) {
 const char* NumericMenuMain::GetAuthor() { return "niffox"; }
 const char* NumericMenuMain::GetDate() { return __DATE__; }
 const char* NumericMenuMain::GetDescription() { return "Numeric Menu"; }
-const char* NumericMenuMain::GetLicense() { return "Paid"; }
+const char* NumericMenuMain::GetLicense() { return "Free"; }
 const char* NumericMenuMain::GetLogTag() { return "Numeric Menu"; }
 const char* NumericMenuMain::GetName() { return "Numeric Menu"; }
 const char* NumericMenuMain::GetURL() { return "https://t.me/niffox_2q"; }
