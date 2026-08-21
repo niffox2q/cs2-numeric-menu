@@ -11,44 +11,7 @@ Numeric Menu - плагин-ядро, который заменяет станд
 Совместимость:
 - API полностью совместимо с Utils, так что для установки достаточно заменить получаемый интерфейс и выставить цвета в файле переводов, чтобы меню выглядело красиво.
 
-Поддерживаемые цвета:
-{DEFAULT}
-{RED}
-{LIGHTPURPLE}
-{GREEN}
-{LIME}
-{LIGHTGREEN}
-{LIGHTRED}
-{GRAY}
-{LIGHTOLIVE}
-{OLIVE}
-{LIGHTBLUE}
-{BLUE}
-{PURPLE}
-{GRAYBLUE}
-
 Требования:
 https://github.com/Pisex/cs2-menus/tree/main
 
-Туториал по подмене с Utils API:
-При объявлении переменной с API замените тип данных с IMenusApi* на INumericMenuApi*
-IMenusApi* menus_api;
-заменить  на
-INumericMenuApi* menus_api;
-
-При инициализации:
-menus_api = (IMenusApi*)g_SMAPI->MetaFactory(Menus_INTERFACE, &ret, nullptr);
-    if (ret == META_IFACE_FAILED) {
-        META_CONPRINTF("%s | Missing UTILS plugin.",g_PLAPI->GetLogTag());
-        engine->ServerCommand(("meta unload " + std::to_string(g_PLID)).c_str());
-        return;
-    }
-
-Заменить на:
-menus_api = (INumericMenuApi*)g_SMAPI->MetaFactory(NUMERIC_MENU_INTERFACE, &ret, nullptr);
-    if (ret == META_IFACE_FAILED) {
-        META_CONPRINTF("%s | Missing UTILS plugin.",g_PLAPI->GetLogTag());
-        engine->ServerCommand(("meta unload " + std::to_string(g_PLID)).c_str());
-        return;
-    }
 
